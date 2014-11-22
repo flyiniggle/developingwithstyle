@@ -14,13 +14,10 @@
 						<h1 class="tealSpan">with style</h1>
 					</div>
 				</div>
-				<div id="mainImgContainer">
-					<img src="css/img/main3.png" width="450" height="354" alt="Developing With Style"/>
-				</div>
 			</div>
 		</div>
 		<div class="navigator" data-ng-controller="navigatorController">
-			<div id="mainNav" class="scrollingNav" data-ng-class="{ 'fixed' : fixBar }">
+			<div id="mainNav" class="scrollingNav" data-ng-class="{ 'fixed' : fixBar, 'absolute' : !fixBar }">
 				<div class="scrollingNavTop"></div>
 				<div class="fixedWidth centered linkWrapper">
 					<div class="tinyTagContainer">

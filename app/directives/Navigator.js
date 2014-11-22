@@ -14,7 +14,7 @@ Stylish.navigator = function($window) {
             });
             scope.$watch('selected', function(){
                 if(scope.selected !== '/') {
-                    window.scrollTo(0, 450);
+                    window.scrollTo(0, 550);
                 } else {
                     window.scrollTo(0, 0);
                 }

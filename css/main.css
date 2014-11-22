@@ -356,6 +356,7 @@ body {
 /*Text*/
 h1, h2, h3 {
 	font-family : Arial, Helvetica, sans-serif;
+	color: rgb(100, 100, 100);
 }
 
 h1 {
@@ -368,6 +369,7 @@ h1 {
 
 h3 {
 	font-size : 25px;
+	color: rgb(100, 100, 100);
 	font-weight : bold;
 }
 
@@ -393,4 +395,45 @@ p {
 	margin : 20px;
 	font-size : 12px;
 	text-align : center;
+}
+
+/* About */
+
+#bottomAbout {
+	padding-bottom: 100px;
+}
+
+#bottomAbout p {
+	padding: 20px 40px;
+	font-size: 18px;
+}
+
+#bottomAbout h3 {
+	padding: 20px 40px;
+	font-size: 22px;
+
+}
+
+#aboutHeader {
+	height: 140px;
+	margin: 40px;
+	border-bottom: 1px solid rgb(136, 136, 136);
+	box-shadow: 0px 7px 7px -7px rgb(136, 136, 136);
+}
+
+#aboutHeader img {
+	display: inline-block;
+	border: 1px solid rgb(100, 100, 100);
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0px 5px 5px rgb(136, 136, 136);
+	vertical-align: middle;
+}
+
+#aboutHeader h1 {
+	font-size: 45px;
+	display: inline-block;
+	line-height: 140px;
+	vertical-align: middle;
+	padding-left : 40px;
 }

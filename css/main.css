@@ -26,6 +26,35 @@ body {
 	margin-right : auto;
 }
 
+.action {
+	display: block;
+	width: 150px;
+	height : 40px;
+	background-color: #33CCCC;
+	border-radius: 5px;
+}
+
+.action a {
+	font-family : "Clear Sans";
+	font-weight : 100;
+	color : rgb(247, 250, 253);
+	font-size : 16px;
+	line-height : 40px;
+	vertical-align: middle;
+	display: block;
+	width : inherit;
+	text-align : center;
+	text-decoration : none;
+}
+
+.action a:hover {
+	text-decoration : underline;
+}
+
+.action a:visited {
+	color : rgb(247, 250, 253);
+}
+
 /*Main title box*/
 .outline {
 	border-color : #33CCCC;
@@ -42,8 +71,7 @@ body {
 }
 
 .mainBox {
-	background-color : #555555;
-	opacity : .7;
+	background-color : rgba(85, 85, 85, .7);
 	position : absolute;
 	top : 0px;
 }
@@ -72,9 +100,8 @@ body {
 
 .whiteSpan {
 	font-size : 40px;
-	color : #fcf4f2;
+	color : rgb(247, 250, 253);
 	font-family : "Clear Sans Thin";
-	font-style : "thin";
 }
 
 #mainImgContainer {
@@ -268,7 +295,7 @@ body {
 }
 
 #bottomContentLeft {
-	border-right: 1px solid #888888;
+	border-right: 1px solid rgb(136, 136, 136);
 }
 
 #bottomContentRight {
@@ -287,7 +314,7 @@ body {
 	margin-top: 40px;
 	margin-bottom: 60px;
 	background-image : url('img/BottomMainBackground.png');
-	box-shadow: 0px -10px 5px #888888;
+	box-shadow: 0px -10px 5px rgb(136, 136, 136);
 }
 
 .bottomDetailWrapper {
@@ -306,7 +333,7 @@ body {
 	text-align : justify;
 	border : 2px solid #DDDDDD;
 	border-radius : 5px;
-	box-shadow: 0px 5px 5px #888888;
+	box-shadow: 0px 5px 5px rgb(136, 136, 136);
 }
 
 .bottomDetailImage{
@@ -320,13 +347,6 @@ body {
 	display : block;
 }
 
-.bottomDetail a {
-	font-family : "Clear Sans";
-	font-weight : 100;
-	color : "#GGGGGG";
-	font-size : 16px;
-	text-align : center;
-}
 .navLink:hover {
 	text-decoration : underline;
 	cursor : pointer;
@@ -369,15 +389,8 @@ p {
 	margin-left : 40px;
 }
 
-#bottomGradient p {
-	/*display: inline-block;
-	font-size: 24px;
-	margin: 2%;
-	color: rgb(255, 255, 255);
-	z-index: 5;*/
-}
-
 #footer {
 	margin : 20px;
 	font-size : 12px;
 	text-align : center;
+}

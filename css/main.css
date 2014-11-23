@@ -35,11 +35,10 @@ body {
 }
 
 .action a {
-	font-family : "Clear Sans";
 	font-weight : 100;
-	color : rgb(247, 250, 253);
 	font-size : 16px;
 	line-height : 40px;
+	color : rgb(247, 250, 253);
 	vertical-align: middle;
 	display: block;
 	width : inherit;
@@ -248,7 +247,7 @@ body {
 	margin-top : 13px;
 	text-align : center;
 	width : 190px;
-	color : #000000;
+	color : #000000 !important;
 	font-family : "Clear Sans";
 	font-weight : 100;
 	font-size : 18px;
@@ -373,7 +372,7 @@ h3 {
 	font-weight : bold;
 }
 
-p {
+p, span, a {
 	font-family : "Clear Sans";
 }
 
@@ -436,4 +435,94 @@ p {
 	line-height: 140px;
 	vertical-align: middle;
 	padding-left : 40px;
+}
+
+/* Main */
+#contactMain {
+	padding-top: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#contactMain h1 {
+	font-size: 40px;
+}
+
+#contactMain h3 {
+	font-size: 20px;
+	color: #33CCCC;
+	display: inline;
+}
+
+#contactMe {
+	display: inline-block;
+	float: right;
+	margin-top: 50px;
+	padding: 25px;
+	background-color: rgba(85, 85, 85, .7);
+}
+
+#contactMe a, a:visited {
+	color: rgb(247, 250, 253);
+	text-decoration: none;
+}
+
+#contactMe a:hover {
+	color: rgb(247, 250, 253);
+	text-decoration: underline;
+}
+
+.contactDetail {
+	margin-bottom: 15px;
+}
+
+.contactDetail span {
+	color : rgb(247, 250, 253);
+	display: inline;
+}
+
+#contactYou {
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-right: 15px;
+	padding-bottom: 40px;
+	width : 60%;
+	border-right: 1px solid rgb(136, 136, 136);
+	box-shadow:  10px 0 10px -10px rgb(150, 150, 150);
+}
+
+#contactYouForm {
+	display: block;
+	padding: 25px;
+	background-color: rgba(85, 85, 85, .7);
+}
+
+.contactYouBlock {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.contactYouBlockMessage {
+	margin-bottom: 20px;
+}
+
+.fieldTitle {
+	color: #33CCCC;
+}
+
+.required {
+	font-size: 10px;
+	float: right;
+	color: rgb(247, 250, 253);
+}
+
+.contactYouBlock input {
+	width: 250px;
+}
+
+.contactYouBlockMessage textarea {
+	width: 100%;
+	height: 300px;
+	resize: vertical;
 }

@@ -437,6 +437,26 @@ p, span, a {
 	padding-left : 40px;
 }
 
+#testimonial {
+	float: right;
+	width: 300px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#testimonial p {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	color: #33CCCC;
+	font-style: italic;
+	margin: 0px;
+	padding: 15px;
+}
+
+.bigQuote {
+	font-size: 20px;
+}
+
 /* Main */
 #contactMain {
 	padding-top: 60px;

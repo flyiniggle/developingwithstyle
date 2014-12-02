@@ -12,7 +12,7 @@ Stylish.routes = function($routeProvider) {
             )
             .when('/work',
                 {
-                    controller : 'homeController',
+                    controller : 'carouselController',
                     templateUrl : 'app/templates/Work.html'
                 }
             )

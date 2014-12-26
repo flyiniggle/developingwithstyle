@@ -171,7 +171,7 @@ body {
 
 .tinyOutline {
 	width : 152px;
-	height : 67;
+	height : 67px;
 	position : relative;
 	top : -3px;
 	border : 3px solid #33CCCC;
@@ -188,16 +188,16 @@ body {
 }
 
 .tinyTealSpan {
-	color : #33CCCC;
-	font-size : 18px;
-	font-family : "Copperplate Gothic Bold";
+	color: #33CCCC;
+	font-size: 18px;
+	font-family: "Copperplate Gothic Bold";
 }
 
 .tinyWhiteSpan {
-	font-size : 18px;
-	color : #fcf4f2;
-	font-family : "Clear Sans Thin";
-	font-style : "thin";
+	font-size: 18px;
+	color: #fcf4f2;
+	font-family: "Clear Sans Thin";
+	font-style: "thin";
 }
 
 .fixed {
@@ -403,11 +403,31 @@ p, span, a {
 }
 
 #workCarousel {
-	height : 600px;
-	padding-top: 80px;
-	margin-bottom: 60px;
-	background-image : url('img/BottomMainBackground.png');
+	height : 750px;
 	box-shadow: 0px 10px 5px rgb(136, 136, 136);
+}
+
+.carousel {
+	height: 100%;
+}
+
+#carouselControls {
+	position: relative;
+	display: inline-block;
+	bottom: -100px;
+	right: 100px;
+}
+
+#carouselPrev, #carouselNext {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	background-color: #33CCCC;
+}
+
+.pony {
+	height: 100%;
+	background: no-repeat scroll center top / cover transparent;
 }
 
 /* About */
@@ -451,7 +471,7 @@ p, span, a {
 	padding-left : 40px;
 }
 
-/* Main */
+/* Contact */
 #contactMain {
 	padding-top: 60px;
 	padding-left: 20px;

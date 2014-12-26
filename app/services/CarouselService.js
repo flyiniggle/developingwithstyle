@@ -1,8 +1,8 @@
 Stylish.carouselService = function() {
     var slides = [
-        ["img1", "words!"],
-        ["img2", "more words!"],
-        ["img3", "these aren't words!"]
+        ["account_ss.jpg", "words!"],
+        ["workbench.jpg", "more words!"],
+        ["underconstruction1.jpg", "these aren't words!"]
     ];
     this.getSlides = function() {
         return slides;

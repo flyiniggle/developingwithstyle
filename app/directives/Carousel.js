@@ -5,14 +5,12 @@ Stylish.carousel = function() {
         link : function(scope, element, attrs) {
             var mainScope = scope.$parent;
 
-            var getSelected = function() {
-                return (mainScope.slides[mainScope.displayIdx] == scope.slide);
-            };
-
             scope.selected = false;
+            scope.slide = mainScope.slides[0];
 
             mainScope.$watch('displayIdx', function(){
-                scope.selected = getSelected();
+                console.log(mainScope.displayIdx)
+                scope.slide = mainScope.slides[displayIdx];
             });
         }
     };

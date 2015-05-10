@@ -9,29 +9,29 @@
 						<span class="fieldTitle">Your name:</span>
 						<span class="required">Required</span>
 						<br/>
-						<input id="contactName" type="text" required="true"/>
+						<input id="contactName" type="text" required="true" ng-model="formData.name"/>
 					</div>
 					<br/>
 					<div class="contactYouBlock">
 						<span class="fieldTitle">Your email:</span>
 						<span class="required">Required</span>
 						<br/>
-						<input id="contactEmail" type="email" required="true"/>
+						<input id="contactEmail" type="email" required="true" ng-model="formData.email"/>
 					</div>
 					<br/>
 					<div class="contactYouBlock">
 						<span class="fieldTitle">Your telephone:</span><br/>
-						<input id="contactPhone" type="tel" required="false"/>
+						<input id="contactPhone" type="tel" required="false" ng-model="formData.telephone"/>
 					</div>
 					<br/>
 					<div class="contactYouBlockMessage">
 						<span class="fieldTitle">What can I help you with?</span>
 						<span class="required">Required</span>
 						<br/>
-						<textarea id="contactMessage"></textarea>
+						<textarea id="contactMessage" ng-model="formData.message"></textarea>
 					</div>
 					<div class="action">
-						<a class="centered">Submit</a>
+						<a class="centered" ng-click="contactMe()">Submit</a>
 					</div>
 				</div>
 			</div>

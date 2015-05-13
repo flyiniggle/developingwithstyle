@@ -1,14 +1,14 @@
 Stylish.contactController = function($scope, $http) {
 	$scope.formData = {
-		name: "",
-		email: "",
-		telephone: "",
-		message: ""
+		name: "me",
+		email: "firetrucks@gmail.com",
+		telephone: "5256277882",
+		message: "heyo"
 	};
 	$scope.contactMe = function(){
 		console.log($scope.formData);
-		$http.post("mail", $scope.formData, {'headers': {'Content-Type': 'text/json'} }
-			//headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+		$http.post("mail", jQuery.param($scope.formData), {'headers': {'Content-Type': 'application/x-www-form-urlencoded'} }
+			//headers: {'Content-Type': 'text/json'}
 		);
 	};
 };

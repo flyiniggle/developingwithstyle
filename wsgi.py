@@ -9,8 +9,11 @@ class Main(object):
     @cherrypy.expose
     def mail(self, name="", email="", telephone="Not provided.", message=""):
         m = mailer.Mailer()
-        m.send_mail(name, email, telephone, message)
-        return "blah"
+        try:
+            m.send_mail(name, email, telephone, message)
+            return "blah"
+        except:
+            return "fail!"
 
     @cherrypy.expose
     def index(self):

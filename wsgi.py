@@ -11,9 +11,9 @@ class Main(object):
         m = mailer.Mailer()
         try:
             m.send_mail(name, email, telephone, message)
-            return "blah"
+            return "1"
         except:
-            return "fail!"
+            return "0"
 
     @cherrypy.expose
     def index(self):

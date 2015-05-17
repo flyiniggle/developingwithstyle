@@ -27,7 +27,7 @@ body {
 }
 
 .action {
-	display: inline-block;
+	display: block;
 	width: 150px;
 	height : 40px;
 	background-color: #33CCCC;
@@ -52,6 +52,14 @@ body {
 
 .action a:visited {
 	color : rgb(247, 250, 253);
+}
+
+.actionWorking {
+	display: block;
+	width: 146px;
+	height : 36px;
+	border: 2px solid #f7f4ff;
+	border-radius: 5px;
 }
 
 /*Main title box*/
@@ -171,7 +179,7 @@ body {
 
 .tinyOutline {
 	width : 152px;
-	height : 67;
+	height : 67px;
 	position : relative;
 	top : -3px;
 	border : 3px solid #33CCCC;
@@ -564,5 +572,7 @@ p, span, a {
 }
 
 #sendLoader{
-	display: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

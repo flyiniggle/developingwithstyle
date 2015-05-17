@@ -11,7 +11,10 @@ Stylish.contactController = function($scope, $http) {
 	$scope.message = "";
 	$scope.contactMe = function(){
 		var successMessage = "Thanks for the message! I'm looking forward to working with you.",
-			failureMessage = "There was an error sending your message. Please reach out to me by email, telephone, or LinkedIn."
+			failureMessage = "There was an error sending your message. Please reach out to me by email, telephone, or LinkedIn.";
+		if ($scope.reqActive){
+			return;
+		}
 		$scope.reqActive = true;
 		$http.post("mail",
 					jQuery.param($scope.formData),

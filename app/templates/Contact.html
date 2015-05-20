@@ -9,29 +9,36 @@
 						<span class="fieldTitle">Your name:</span>
 						<span class="required">Required</span>
 						<br/>
-						<input id="contactName" type="text" required="true"/>
+						<input id="contactName" type="text" required="true" ng-model="formData.name" ng-disabled="editable"/>
 					</div>
 					<br/>
 					<div class="contactYouBlock">
 						<span class="fieldTitle">Your email:</span>
 						<span class="required">Required</span>
 						<br/>
-						<input id="contactEmail" type="email" required="true"/>
+						<input id="contactEmail" type="email" required="true" ng-model="formData.email" ng-disabled="editable"/>
 					</div>
 					<br/>
 					<div class="contactYouBlock">
 						<span class="fieldTitle">Your telephone:</span><br/>
-						<input id="contactPhone" type="tel" required="false"/>
+						<input id="contactPhone" type="tel" required="false" ng-model="formData.telephone" ng-disabled="editable"/>
 					</div>
 					<br/>
 					<div class="contactYouBlockMessage">
 						<span class="fieldTitle">What can I help you with?</span>
 						<span class="required">Required</span>
 						<br/>
-						<textarea id="contactMessage"></textarea>
+						<textarea id="contactMessage" ng-model="formData.message" ng-disabled="editable"></textarea>
 					</div>
-					<div class="action">
-						<a class="centered">Submit</a>
+					<div ng-class="!reqActive ? 'action' : 'actionWorking'">
+						<a class="centered" ng-show="!reqActive" ng-click="contactMe()">Submit</a>
+						<img id="sendLoader" ng-show="reqActive" src="css/img/loader.svg"/>
+					</div>
+					<div class="contactStatus">
+						<div class="contactFeedback">
+							<span class="icon ion-android-happy"></span>
+							<span ng-bind="message"></span>
+						</div>
 					</div>
 				</div>
 			</div>

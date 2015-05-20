@@ -54,6 +54,14 @@ body {
 	color : rgb(247, 250, 253);
 }
 
+.actionWorking {
+	display: block;
+	width: 146px;
+	height : 36px;
+	border: 2px solid #f7f4ff;
+	border-radius: 5px;
+}
+
 /*Main title box*/
 .outline {
 	border-color : #33CCCC;
@@ -471,6 +479,26 @@ p, span, a {
 	padding-left : 40px;
 }
 
+#testimonial {
+	float: right;
+	width: 300px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#testimonial p {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	color: #33CCCC;
+	font-style: italic;
+	margin: 0px;
+	padding: 15px;
+}
+
+.bigQuote {
+	font-size: 20px;
+}
+
 /* Contact */
 #contactMain {
 	padding-top: 60px;
@@ -559,4 +587,26 @@ p, span, a {
 	width: 100%;
 	height: 300px;
 	resize: vertical;
+}
+
+.contactStatus {
+	display: inline-block;
+	height: 40px;
+}
+
+.contactFeedback {
+	display: none;
+	padding: 10px;
+	width: 300px;
+	min-height: 16px;
+	background-color: #f7f4ff;
+	border: 2px solid #E00000;
+	color: #E00000;
+	border-radius: 5px;
+}
+
+#sendLoader{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

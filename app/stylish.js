@@ -24,7 +24,7 @@ Stylish.routes = function($routeProvider) {
             )
             .when('/contact',
                 {
-                    controller : 'homeController',
+                    controller : 'contactController',
                     templateUrl : 'app/templates/Contact.html'
                 }
             )

@@ -12,7 +12,7 @@ except IOError:
 	pass
 
 
-class Main(object):
+class application(object):
 
 	@cherrypy.expose
 	def mail(self, name="", email="", telephone="Not provided.", message=""):
@@ -31,4 +31,4 @@ class Main(object):
 
 if __name__ == "__main__":
 	cherrypy.config.update({"tools.staticdir.root": os.path.dirname(os.path.abspath(__file__))})
-	cherrypy.quickstart(Main(), "/", "conf/server.conf")
+	cherrypy.quickstart(application(), "/", "conf/server.conf")

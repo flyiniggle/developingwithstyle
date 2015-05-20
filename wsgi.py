@@ -1,15 +1,7 @@
-import cherrypy
 import os
+import cherrypy
 
 from lib import mailer
-
-
-virtenv = os.environ['OPENSHIFT_PYTHON_DIR'] + '/virtenv/'
-virtualenv = os.path.join(virtenv, 'bin/activate_this.py')
-try:
-	execfile(virtualenv, dict(__file__=virtualenv))
-except IOError:
-	pass
 
 
 class application(object):
@@ -28,7 +20,3 @@ class application(object):
 		resource = open(os.path.join("", "index.html"), 'r')
 		response_body = resource.read()
 		return response_body
-
-if __name__ == "__main__":
-	cherrypy.config.update({"tools.staticdir.root": os.path.dirname(os.path.abspath(__file__))})
-	cherrypy.quickstart(application(), "/", "conf/server.conf")

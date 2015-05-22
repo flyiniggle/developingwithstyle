@@ -26,15 +26,13 @@ Stylish.contactController = function($scope, $http) {
 			$scope.status = parseInt(data);
 			$scope.message = failureMessage;
 		}).then(function(){
-				var feedback = jQuery(".contactFeedback");
 				$scope.reqActive = false;
-				feedback.fadeIn(400, function(){
-					window.setTimeout(function() {
-						feedback.fadeOut(400);
-					}, 2000);
-				});
+				jQuery(".contactStatus").show();
 		})
 	};
+	$scope.closeFeedback = function() {
+				jQuery(".contactStatus").hide();
+	}
 };
 
 Stylish.controller('contactController', Stylish.contactController);

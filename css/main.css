@@ -400,7 +400,7 @@ p, span, a {
 
 #footer {
 	margin : 20px;
-	font-size : 12px;
+	font-size : 16px;
 	text-align : center;
 }
 
@@ -556,19 +556,36 @@ p, span, a {
 }
 
 .contactStatus {
-	display: inline-block;
-	height: 40px;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5);
 }
 
 .contactFeedback {
-	display: none;
-	padding: 10px;
-	width: 300px;
-	min-height: 16px;
-	background-color: #f7f4ff;
-	border: 2px solid #E00000;
-	color: #E00000;
-	border-radius: 5px;
+	display: block;
+	position: absolute;
+	top: 35%;
+	padding: 50px 20px 50px 20px;
+	width: 100%;
+	font-size: 30px;
+	background-color: #555555;
+	opacity: 1;
+	color: #f7f4ff;
+}
+
+.contactFeedbackMessage {
+	padding: 20px;
+}
+
+#contactFeedbackClose {
+	position: relative;
+	top: -20px;
+	display: inline;
+	float: right;
 }
 
 #sendLoader{

@@ -36,7 +36,7 @@ body {
 
 .action a {
 	font-weight : 100;
-	font-size : 16px;
+	font-size : 22px;
 	line-height : 40px;
 	color : rgb(247, 250, 253);
 	vertical-align: middle;
@@ -257,7 +257,7 @@ body {
 	color : #000000 !important;
 	font-family : "Clear Sans";
 	font-weight : 100;
-	font-size : 18px;
+	font-size : 25px;
 	text-decoration : none;
 }
 
@@ -380,6 +380,7 @@ h3 {
 }
 
 p, span, a {
+	font-size: 20px;
 	font-family : "Clear Sans";
 }
 
@@ -411,7 +412,6 @@ p, span, a {
 
 #bottomAbout p {
 	padding: 20px 40px;
-	font-size: 18px;
 }
 
 #bottomAbout h3 {
@@ -453,7 +453,7 @@ p, span, a {
 
 #testimonial p {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 14px;
+	font-size: 18px;
 	color: #33CCCC;
 	font-style: italic;
 	margin: 0px;
@@ -539,7 +539,7 @@ p, span, a {
 }
 
 .required {
-	font-size: 10px;
+	font-size: 16px;
 	float: right;
 	color: rgb(247, 250, 253);
 }

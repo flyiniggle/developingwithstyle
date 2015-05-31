@@ -1,3 +1,30 @@
+@font-face {
+	font-family: "Clear Sans";
+	src: url('fonts/clearsans-1.00/EOT/ClearSans-Regular.eot'); /* IE9 Compat Modes */
+	src: url('fonts/clearsans-1.00/EOT/ClearSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/clearsans-1.00/WOFF/ClearSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/clearsans-1.00/TTF/ClearSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/clearsans-1.00/SVG/ClearSans-Regular.svg#"ClearSans-Regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: "Clear Sans Thin";
+	src: url('fonts/clearsans-1.00/EOT/ClearSans-Thin.eot'); /* IE9 Compat Modes */
+	src: url('fonts/clearsans-1.00/EOT/ClearSans-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/clearsans-1.00/WOFF/ClearSans-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/clearsans-1.00/TTF/ClearSans-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/clearsans-1.00/SVG/ClearSans-Thin.svg#"ClearSans-Regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: "Playfair Display SC Bold";
+	src: url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.svg#"ClearSans-Regular') format('svg'); /* Legacy iOS */
+}
+
 body {
 	background: #f7f4ff; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -102,7 +129,7 @@ body {
 .tealSpan {
 	color : #33CCCC;
 	font-size : 37px;
-	font-family : "Copperplate Gothic Bold";
+	font-family : "Playfair Display SC Bold";
 }
 
 .whiteSpan {
@@ -196,15 +223,15 @@ body {
 
 .tinyTealSpan {
 	color : #33CCCC;
-	font-size : 18px;
-	font-family : "Copperplate Gothic Bold";
+	font-size : 22px;
+	line-height: 16px;
+	font-family : "Playfair Display SC Bold";
 }
 
 .tinyWhiteSpan {
 	font-size : 18px;
 	color : #fcf4f2;
 	font-family : "Clear Sans Thin";
-	font-style : "thin";
 }
 
 .fixed {
@@ -254,14 +281,10 @@ body {
 	margin-top : 13px;
 	text-align : center;
 	width : 190px;
-	color : #000000 !important;
-	font-family : "Clear Sans";
-	font-weight : 100;
-	font-size : 25px;
 	text-decoration : none;
 }
 
-.navLink:hover {
+.navLink h1:hover {
 	text-decoration : underline;
 	cursor : pointer;
 }

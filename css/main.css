@@ -53,6 +53,11 @@ body {
 	margin-right : auto;
 }
 
+button {
+	background-color: transparent;
+	border: none;
+}
+
 .action {
 	display: block;
 	width: 150px;
@@ -61,7 +66,7 @@ body {
 	border-radius: 5px;
 }
 
-.action a {
+.action a, .action button {
 	font-weight : 100;
 	font-size : 22px;
 	line-height : 40px;
@@ -73,7 +78,7 @@ body {
 	text-decoration : none;
 }
 
-.action a:hover {
+.action a:hover, .action button:hover {
 	text-decoration : underline;
 }
 
@@ -402,7 +407,7 @@ h3 {
 	font-weight : bold;
 }
 
-p, span, a {
+p, span, a, button {
 	font-size: 20px;
 	font-family : "Clear Sans";
 }
@@ -578,7 +583,6 @@ p, span, a {
 }
 
 .contactStatus {
-	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;

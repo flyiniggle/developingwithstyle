@@ -593,3 +593,11 @@ p, span, a {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.ion-android-sad{
+	color: rgb(216, 8, 8);
+}
+
+.ion-android-happy{
+	color: rgb(3, 191, 110);
+}

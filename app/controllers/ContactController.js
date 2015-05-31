@@ -1,9 +1,9 @@
 Stylish.contactController = function($scope, $http) {
 	$scope.formData = {
-		name: "me",
-		email: "firetrucks@gmail.com",
-		telephone: "5256277882",
-		message: "heyo"
+		name: "",
+		email: "",
+		telephone: "",
+		message: ""
 	};
 	$scope.editable = ($scope.reqActive && $scope.status === -1);
 	$scope.reqActive = false;

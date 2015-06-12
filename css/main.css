@@ -1,3 +1,30 @@
+@font-face {
+	font-family: "Clear Sans";
+	src: url('fonts/clearsans-1.00/EOT/ClearSans-Regular.eot'); /* IE9 Compat Modes */
+	src: url('fonts/clearsans-1.00/EOT/ClearSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/clearsans-1.00/WOFF/ClearSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/clearsans-1.00/TTF/ClearSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/clearsans-1.00/SVG/ClearSans-Regular.svg#"ClearSans-Regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: "Clear Sans Thin";
+	src: url('fonts/clearsans-1.00/EOT/ClearSans-Thin.eot'); /* IE9 Compat Modes */
+	src: url('fonts/clearsans-1.00/EOT/ClearSans-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/clearsans-1.00/WOFF/ClearSans-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/clearsans-1.00/TTF/ClearSans-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/clearsans-1.00/SVG/ClearSans-Thin.svg#"ClearSans-Regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: "Playfair Display SC Bold";
+	src: url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.svg#"ClearSans-Regular') format('svg'); /* Legacy iOS */
+}
+
 body {
 	background: #f7f4ff; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -26,6 +53,11 @@ body {
 	margin-right : auto;
 }
 
+button {
+	background-color: transparent;
+	border: none;
+}
+
 .action {
 	display: block;
 	width: 150px;
@@ -34,9 +66,9 @@ body {
 	border-radius: 5px;
 }
 
-.action a {
+.action a, .action button {
 	font-weight : 100;
-	font-size : 16px;
+	font-size : 22px;
 	line-height : 40px;
 	color : rgb(247, 250, 253);
 	vertical-align: middle;
@@ -46,7 +78,7 @@ body {
 	text-decoration : none;
 }
 
-.action a:hover {
+.action a:hover, .action button:hover {
 	text-decoration : underline;
 }
 
@@ -102,7 +134,7 @@ body {
 .tealSpan {
 	color : #33CCCC;
 	font-size : 37px;
-	font-family : "Copperplate Gothic Bold";
+	font-family : "Playfair Display SC Bold";
 }
 
 .whiteSpan {
@@ -179,7 +211,6 @@ body {
 
 .tinyOutline {
 	width : 152px;
-	height : 67px;
 	position : relative;
 	top : -3px;
 	border : 3px solid #33CCCC;
@@ -196,16 +227,16 @@ body {
 }
 
 .tinyTealSpan {
-	color: #33CCCC;
-	font-size: 18px;
-	font-family: "Copperplate Gothic Bold";
+	color : #33CCCC;
+	font-size : 22px;
+	line-height: 16px;
+	font-family : "Playfair Display SC Bold";
 }
 
 .tinyWhiteSpan {
-	font-size: 18px;
-	color: #fcf4f2;
-	font-family: "Clear Sans Thin";
-	font-style: "thin";
+	font-size : 18px;
+	color : #fcf4f2;
+	font-family : "Clear Sans Thin";
 }
 
 .fixed {
@@ -255,14 +286,10 @@ body {
 	margin-top : 13px;
 	text-align : center;
 	width : 190px;
-	color : #000000 !important;
-	font-family : "Clear Sans";
-	font-weight : 100;
-	font-size : 18px;
 	text-decoration : none;
 }
 
-.navLink:hover {
+.navLink h1:hover {
 	text-decoration : underline;
 	cursor : pointer;
 }
@@ -380,7 +407,8 @@ h3 {
 	font-weight : bold;
 }
 
-p, span, a {
+p, span, a, button {
+	font-size: 20px;
 	font-family : "Clear Sans";
 }
 
@@ -400,42 +428,8 @@ p, span, a {
 
 #footer {
 	margin : 20px;
-	font-size : 12px;
+	font-size : 16px;
 	text-align : center;
-}
-
-/* Work */
-
-#bottomWork {
-	padding-bottom: 100px;
-}
-
-#workCarousel {
-	height : 750px;
-	box-shadow: 0px 10px 5px rgb(136, 136, 136);
-}
-
-.carousel {
-	height: 100%;
-}
-
-#carouselControls {
-	position: relative;
-	display: inline-block;
-	bottom: -100px;
-	right: 100px;
-}
-
-#carouselPrev, #carouselNext {
-	width: 80px;
-	height: 80px;
-	display: inline-block;
-	background-color: #33CCCC;
-}
-
-.pony {
-	height: 100%;
-	background: no-repeat scroll center top / cover transparent;
 }
 
 /* About */
@@ -446,7 +440,6 @@ p, span, a {
 
 #bottomAbout p {
 	padding: 20px 40px;
-	font-size: 18px;
 }
 
 #bottomAbout h3 {
@@ -488,7 +481,7 @@ p, span, a {
 
 #testimonial p {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 14px;
+	font-size: 18px;
 	color: #33CCCC;
 	font-style: italic;
 	margin: 0px;
@@ -574,7 +567,7 @@ p, span, a {
 }
 
 .required {
-	font-size: 10px;
+	font-size: 16px;
 	float: right;
 	color: rgb(247, 250, 253);
 }
@@ -590,23 +583,48 @@ p, span, a {
 }
 
 .contactStatus {
-	display: inline-block;
-	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5);
 }
 
 .contactFeedback {
-	display: none;
-	padding: 10px;
-	width: 300px;
-	min-height: 16px;
-	background-color: #f7f4ff;
-	border: 2px solid #E00000;
-	color: #E00000;
-	border-radius: 5px;
+	display: block;
+	position: absolute;
+	top: 35%;
+	padding: 50px 20px 50px 20px;
+	width: 100%;
+	font-size: 30px;
+	background-color: #555555;
+	opacity: 1;
+	color: #f7f4ff;
+}
+
+.contactFeedbackMessage {
+	padding: 20px;
+}
+
+#contactFeedbackClose {
+	position: relative;
+	top: -20px;
+	display: inline;
+	float: right;
+	cursor: pointer;
 }
 
 #sendLoader{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.ion-android-sad{
+	color: rgb(216, 8, 8);
+}
+
+.ion-android-happy{
+	color: rgb(3, 191, 110);
 }

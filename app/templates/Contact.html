@@ -4,43 +4,46 @@
 			<h1>Say hello</h1>
 			<p>Go ahead, reach out. I'd love to hear from you. Get in touch with me and find out what I can do for you.</p>
 			<div id="contactYou">
-				<div id="contactYouForm">
+				<form id="contactYouForm" name="contactForm" novalidate ng-submit="contactMe()">
 					<div class="contactYouBlock">
 						<span class="fieldTitle">Your name:</span>
 						<span class="required">Required</span>
 						<br/>
-						<input id="contactName" type="text" required="true" ng-model="formData.name" ng-disabled="editable"/>
+						<input id="contactName" name="name" type="text" required="true" ng-model="formData.name" ng-disabled="editable"/>
 					</div>
 					<br/>
 					<div class="contactYouBlock">
 						<span class="fieldTitle">Your email:</span>
 						<span class="required">Required</span>
 						<br/>
-						<input id="contactEmail" type="email" required="true" ng-model="formData.email" ng-disabled="editable"/>
+						<input id="contactEmail" name="email" type="email" required="true" ng-model="formData.email" ng-disabled="editable"/>
 					</div>
 					<br/>
 					<div class="contactYouBlock">
 						<span class="fieldTitle">Your telephone:</span><br/>
-						<input id="contactPhone" type="tel" required="false" ng-model="formData.telephone" ng-disabled="editable"/>
+						<input id="contactPhone" name="telephone" type="number" ng-minlength="10" required="false" ng-model="formData.telephone" ng-disabled="editable"/>
 					</div>
 					<br/>
 					<div class="contactYouBlockMessage">
 						<span class="fieldTitle">What can I help you with?</span>
 						<span class="required">Required</span>
 						<br/>
-						<textarea id="contactMessage" ng-model="formData.message" ng-disabled="editable"></textarea>
+						<textarea id="contactMessage" name="message" ng-model="formData.message" ng-disabled="editable" required="true"></textarea>
 					</div>
 					<div ng-class="!reqActive ? 'action' : 'actionWorking'">
-						<a class="centered" ng-show="!reqActive" ng-click="contactMe()">Submit</a>
+						<button type="submit" class="centered" ng-show="!reqActive">Submit</button>
 						<img id="sendLoader" ng-show="reqActive" src="css/img/loader.svg"/>
 					</div>
-					<div class="contactStatus">
+					<div ng-show="!!message" class="contactStatus">
 						<div class="contactFeedback">
-							<span class="icon ion-android-happy"></span>
-							<span ng-bind="message"></span>
+							<div class="contactFeedbackMessage fixedWidth centered">
+								<div id="contactFeedbackClose" class="icon ion-android-cancel" ng-click="closeFeedback()"></div>
+								<span ng-class="(status > 0) ? 'ion-android-happy' : 'ion-android-sad'"></span>
+								<span ng-bind="message"></span>
+							</div>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 			<div id="contactMe">
 				<div class="contactDetail">

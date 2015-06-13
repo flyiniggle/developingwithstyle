@@ -23,6 +23,12 @@ Stylish.carouselController = function($scope, carouselService) {
         var dIdx = $scope.displayIdx;
         $scope.displayIdx  = (dIdx === 0) ? 0 : (dIdx - 1);
     };
+
+	$scope.bgImg = function() {
+		return {
+			background: 'url(css/img/carousel/' + $scope.slide[0] + ') no-repeat scroll center top / cover transparent'
+		};
+	};
 };
 
 Stylish.controller('carouselController', Stylish.carouselController);

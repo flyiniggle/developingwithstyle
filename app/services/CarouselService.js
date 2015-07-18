@@ -1,11 +1,14 @@
-Stylish.carouselService = function() {
-    var slides = [
-        ["account_ss.jpg", "words!"],
-        ["workbench.jpg", "more words!"],
-        ["underconstruction1.jpg", "these aren't words!"]
-    ];
+Stylish.carouselService = function($http, $q) {
+    var slides = [];
+
     this.getSlides = function() {
-        return slides;
+        var deferred = $q.defer();
+        $http.get("get_ponies").success(function(data){
+            deferred.resolve(data);
+        }).error(function() {
+            deferred.reject("An error occurred while retrieving these slides.");
+        });
+        return deferred.promise;
     };
 };
 

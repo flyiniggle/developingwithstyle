@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<carousel>
+    <slide>
+        <image>account_ss.jpg</image>
+        <words>words!</words>
+    </slide>
+    <slide>
+        <image>workbench.jpg</image>
+        <words>wow more words!</words>
+    </slide>
+    <slide>
+        <image>underconstruction1.jpg</image>
+        <words>these aren't words!</words>
+    </slide>
+</carousel>

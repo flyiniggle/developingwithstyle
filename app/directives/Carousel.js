@@ -3,14 +3,13 @@ Stylish.carousel = function() {
         restrict : "AC",
         templateUrl : 'app/templates/snippets/Pony.html',
         link : function(scope, element, attrs) {
-            var mainScope = scope.$parent;
+            //var mainScope = scope.$parent;
 
             scope.selected = false;
-            scope.slide = mainScope.slides[0];
+            scope.slide = scope.slides[0];
 
-            mainScope.$watch('displayIdx', function(){
-                console.log(mainScope.displayIdx)
-                scope.slide = mainScope.slides[displayIdx];
+            scope.$watch('displayIdx', function(){
+                scope.slide = scope.slides[scope.displayIdx];
             });
         }
     };

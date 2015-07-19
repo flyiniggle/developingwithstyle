@@ -441,6 +441,10 @@ p, span, a, button {
 	padding-bottom: 60px;
 }
 
+#workCarousel {
+	min-height: 700px;
+}
+
 #carouselControls {
 	padding: 10px;
 	background-color: rgba(85, 85, 85, .7);

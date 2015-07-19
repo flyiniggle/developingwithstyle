@@ -3,7 +3,6 @@ Stylish.carousel = function() {
         restrict : "AC",
         templateUrl : 'app/templates/snippets/Pony.html',
         link : function(scope, element, attrs) {
-            //var mainScope = scope.$parent;
 
             scope.selected = false;
             scope.slide = scope.slides[0];

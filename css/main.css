@@ -428,9 +428,24 @@ p, span, a, button {
 
 /* Work */
 #carouselControls {
-	width: 100%;
-	height: 50px;
+	padding: 10px;
 	background-color: rgba(85, 85, 85, .7);
+}
+
+#carouselNext, #carouselPrev {
+	display: inline;
+	padding: 10px;
+}
+
+.ion-android-arrow-dropright-circle, .ion-android-arrow-dropleft-circle {
+	font-size: 60px;
+	color: #33CCCC;
+	opacity: .5;
+	cursor: default;
+}
+
+.ion-android-arrow-dropright-circle:hover, .ion-android-arrow-dropleft-circle:hover {
+	opacity: 1;
 }
 
 .ponyBackground {

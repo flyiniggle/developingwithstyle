@@ -2,11 +2,13 @@
 	<div id="workCarousel"><ajaxloader></ajaxloader>
 		<div class="carousel" data-ng-class="{'focused' : selected}"></div>
 		<div id="carouselControls">
-			<div id="carouselPrev" data-ng-click="prev()" data-ng-class="{'inactive' : disableCarouselPrev}">
-				<span class="ion-android-arrow-dropleft-circle"></span>
-			</div>
-			<div id="carouselNext" data-ng-click="next()" data-ng-class="{'inactive' : disableCarouselNext}">
-				<span class="ion-android-arrow-dropright-circle"></span>
+			<div class="centered">
+				<div id="carouselPrev" data-ng-click="prev()" data-ng-class="{'inactive' : disableCarouselPrev}">
+					<span class="ion-android-arrow-dropleft-circle"></span>
+				</div>
+				<div id="carouselNext" data-ng-click="next()" data-ng-class="{'inactive' : disableCarouselNext}">
+					<span class="ion-android-arrow-dropright-circle"></span>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -31,9 +31,9 @@ Stylish.carouselController = function($scope, carouselService) {
 	$scope.bgImg = function() {
 		var bg = "";
 		try{
-			bg = 'url(css/img/carousel/' + $scope.slide[$scope.displayIdx] + ') no-repeat scroll center top / cover transparent';
+			bg = 'url(css/img/carousel/' + $scope.slide[0] + ') no-repeat scroll center top / cover transparent';
 		} catch(e) {
-			bg = "some loading gif";
+			bg = "url('css/img/loader.svg') no-repeat scroll center top / cover transparent";
 		}
 		return {
 			background: bg

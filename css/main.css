@@ -450,9 +450,13 @@ p, span, a, button {
 	background-color: rgba(85, 85, 85, .7);
 }
 
+.carouselControlsWrapper {
+	width: 520px;
+}
+
 #carouselNext, #carouselPrev {
 	display: inline;
-	padding: 10px;
+	padding: 100px;
 }
 
 .ion-android-arrow-dropright-circle, .ion-android-arrow-dropleft-circle {

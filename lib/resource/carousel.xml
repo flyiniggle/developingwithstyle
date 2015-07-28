@@ -2,14 +2,17 @@
 <carousel>
     <slide>
         <image>account_ss.jpg</image>
-        <words>words!</words>
+        <header>beautiful applications</header>
+        <words>I make sophisticated apps with a sleek, modern look.</words>
     </slide>
     <slide>
         <image>workbench.jpg</image>
-        <words>wow more words!</words>
+        <header>powerful, reliable results</header>
+        <words>My products are of the highest quality, and I love tackling the most complex projects.</words>
     </slide>
     <slide>
         <image>underconstruction1.jpg</image>
-        <words>these aren't words!</words>
+        <header>carefully crafted designs</header>
+        <words>Carefully built, my designs give users a fun an easy experience.</words>
     </slide>
 </carousel>

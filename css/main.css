@@ -396,7 +396,7 @@ h1 {
 }
 
 h2 {
-	font-size : 25px;
+	font-size : 32px;
 	font-weight : normal;
 	color: rgb(100, 100, 100);
 	margin : 0px;
@@ -484,8 +484,25 @@ img.ponyBackground {
 	position: absolute;
 	top: 50px;
 	right: 200px;
+	width: 300px;
 	background-color: rgba(85, 85, 85, .7);
 	padding: 15px;
+}
+
+.ponyCaption h2, .ponyCaption p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.ponyCaption h2 {
+	color: #33CCCC;
+	text-align: right;
+	padding-bottom: 40px;
+}
+
+.ponyCaption p {
+	color: rgb(247, 250, 253);
 }
 
 /* About */

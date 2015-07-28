@@ -442,6 +442,7 @@ p, span, a, button {
 }
 
 #workCarousel {
+	position: relative;
 	min-height: 700px;
 }
 
@@ -450,17 +451,22 @@ p, span, a, button {
 	background-color: rgba(85, 85, 85, .7);
 }
 
-.carouselControlsWrapper {
-	width: 520px;
+#carouselNext, #carouselPrev {
+	position: absolute;
+	top: 500px;
+	z-index: 2;
 }
 
-#carouselNext, #carouselPrev {
-	display: inline;
-	padding: 100px;
+#carouselNext {
+	right: 200px;
+}
+
+#carouselPrev {
+	left: 200px;
 }
 
 .ion-android-arrow-dropright-circle, .ion-android-arrow-dropleft-circle {
-	font-size: 60px;
+	font-size: 100px;
 	color: #33CCCC;
 	opacity: .5;
 	cursor: default;
@@ -482,7 +488,7 @@ img.ponyBackground {
 
 .ponyCaption {
 	position: absolute;
-	top: 50px;
+	top: 90px;
 	right: 200px;
 	width: 300px;
 	background-color: rgba(85, 85, 85, .7);
@@ -492,7 +498,7 @@ img.ponyBackground {
 .ponyCaption h2, .ponyCaption p {
 	display: block;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 }
 
 .ponyCaption h2 {

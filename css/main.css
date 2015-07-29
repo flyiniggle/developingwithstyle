@@ -143,13 +143,6 @@ button {
 	font-family : "Clear Sans Thin";
 }
 
-#mainImgContainer {
-	width : 500px;
-	height : 363px;
-	margin-top : 50px;
-	float : right;
-}
-
 #topMain {
 	height : 550px;
 	background: url('img/workdesk.jpg') no-repeat scroll center top / cover transparent;
@@ -170,6 +163,7 @@ button {
 #mainNav {
 	width : 100%;
 	height : 66px;
+	z-index: 2;
 	margin : 0px;
 	border-top-style : solid;
 	border-top-color : #555555;
@@ -394,7 +388,15 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size : 25px;
+	font-size : 40px;
+	font-weight : normal;
+	color: rgb(100, 100, 100);
+	margin : 0px;
+	padding : 0px;
+}
+
+h2 {
+	font-size : 32px;
 	font-weight : normal;
 	color: rgb(100, 100, 100);
 	margin : 0px;
@@ -417,7 +419,6 @@ p, span, a, button {
 	width: 80%;
 	margin-bottom: 40px;
 	margin-left: 25px;
-	font-size: 40px;
 	z-index: 5;
 }
 
@@ -430,6 +431,85 @@ p, span, a, button {
 	margin : 20px;
 	font-size : 16px;
 	text-align : center;
+}
+
+/* Work */
+#workIntro {
+	padding-top: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 60px;
+}
+
+#workCarousel {
+	position: relative;
+	min-height: 700px;
+	display: none;
+}
+
+#carouselControls {
+	padding: 10px;
+	background-color: rgba(85, 85, 85, .7);
+}
+
+#carouselNext, #carouselPrev {
+	position: absolute;
+	top: 500px;
+	z-index: 2;
+}
+
+#carouselNext {
+	right: 200px;
+}
+
+#carouselPrev {
+	left: 200px;
+}
+
+.ion-android-arrow-dropright-circle, .ion-android-arrow-dropleft-circle {
+	font-size: 100px;
+	color: #33CCCC;
+	opacity: .5;
+	cursor: default;
+}
+
+.ion-android-arrow-dropright-circle:hover, .ion-android-arrow-dropleft-circle:hover {
+	opacity: 1;
+}
+
+.ponyBackground {
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+}
+
+img.ponyBackground {
+	visibility: hidden;
+}
+
+.ponyCaption {
+	position: absolute;
+	top: 90px;
+	right: 200px;
+	width: 300px;
+	background-color: rgba(85, 85, 85, .7);
+	padding: 15px;
+}
+
+.ponyCaption h2, .ponyCaption p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ponyCaption h2 {
+	color: #33CCCC;
+	text-align: right;
+	padding-bottom: 40px;
+}
+
+.ponyCaption p {
+	color: rgb(247, 250, 253);
 }
 
 /* About */
@@ -445,7 +525,6 @@ p, span, a, button {
 #bottomAbout h3 {
 	padding: 20px 40px;
 	font-size: 22px;
-
 }
 
 #aboutHeader {
@@ -465,7 +544,6 @@ p, span, a, button {
 }
 
 #aboutHeader h1 {
-	font-size: 45px;
 	display: inline-block;
 	line-height: 140px;
 	vertical-align: middle;

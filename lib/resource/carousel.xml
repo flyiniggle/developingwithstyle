@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<carousel>
+    <slide>
+        <image>apple-camera-desk-office.jpg</image>
+        <header>beautiful applications</header>
+        <words>I make sophisticated apps with a sleek, modern look.</words>
+    </slide>
+    <slide>
+        <image>BSOD.jpg</image>
+        <header>powerful, reliable results</header>
+        <words>My products are of the highest quality, and I love tackling the most complex projects.</words>
+    </slide>
+    <slide>
+        <image>touchscreen.jpg</image>
+        <header>carefully crafted designs</header>
+        <words>Carefully built, my designs give users a fun an easy experience.</words>
+    </slide>
+</carousel>

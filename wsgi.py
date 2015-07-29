@@ -1,20 +1,28 @@
 import os
+import json
 import cherrypy
 from email.errors import MessageError
 
-from lib import mailer
+from lib import mailer, carousel
 
 
 class application(object):
+    m = None
 
     @cherrypy.expose
     def mail(self, name="", email="", telephone="Not provided.", message=""):
-        m = mailer.Mailer()
+        if not self.m:
+            self.m = mailer.Mailer()
         try:
-            m.send_mail(name, email, telephone, message)
+            self.m.send_mail(name, email, telephone, message)
             return "1"
         except MessageError:
             return "0"
+
+    @cherrypy.expose
+    def get_ponies(self):
+        c = carousel.Carousel()
+        return json.dumps(c.get_ponies())
 
     @cherrypy.expose
     def index(self):

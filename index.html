@@ -33,16 +33,16 @@
 					</div>
 					<div id="horizontalNav" class="centered">
 						<a class="navLink" data-ng-class="{ active : selected === '/' }" href="#/">
-							<h1>Home</h1>
+							<h2>Home</h2>
 						</a>
 						<a class="navLink" data-ng-class="{ active : selected === '/work' }" href="#/work">
-							<h1>Work</h1>
+							<h2>Work</h2>
 						</a>
 						<a class="navLink" data-ng-class="{ active : selected === '/about' }" href="#/about">
-							<h1>About</h1>
+							<h2>About</h2>
 						</a>
 						<a class="navLink" data-ng-class="{ active : selected === '/contact' }" href="#/contact">
-							<h1>Contact</h1>
+							<h2>Contact</h2>
 						</a>
 					</div>
 				</div>
@@ -68,8 +68,10 @@
 		<script type="text/javascript" src="app/stylish.js"></script>
 
 		<!--Directives-->
+		<script type="text/javascript" src="app/directives/AjaxLoader.js"></script>
 		<script type="text/javascript" src="app/directives/Navigator.js"></script>
 		<script type="text/javascript" src="app/directives/ContactFeedback.js"></script>
+		<script type="text/javascript" src="app/directives/Carousel.js"></script>
 
 		<!--Animations-->
 		<script type="text/javascript" src="app/animations/TinyTag.js"></script>
@@ -78,5 +80,9 @@
 		<script type="text/javascript" src="app/controllers/HomeController.js"></script>
 		<script type="text/javascript" src="app/controllers/NavigatorController.js"></script>
 		<script type="text/javascript" src="app/controllers/ContactController.js"></script>
+		<script type="text/javascript" src="app/controllers/CarouselController.js"></script>
+
+		<!--Services-->
+		<script type="text/javascript" src="app/services/CarouselService.js"></script>
 	</body>
 </html>

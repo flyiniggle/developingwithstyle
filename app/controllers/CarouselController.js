@@ -10,6 +10,7 @@ Stylish.carouselController = function($scope, carouselService) {
 			$scope.slides = (data);
 			$scope.slide = $scope.slides[$scope.displayIdx];
 			$scope.disableCarouselNext = false;
+			jQuery("#workCarousel").show();
 		},
 		function(errorMessage){
 			alert(errorMessage);

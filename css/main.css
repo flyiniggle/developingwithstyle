@@ -444,6 +444,7 @@ p, span, a, button {
 #workCarousel {
 	position: relative;
 	min-height: 700px;
+	display: none;
 }
 
 #carouselControls {

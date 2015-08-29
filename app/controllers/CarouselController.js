@@ -1,4 +1,6 @@
 Stylish.carouselController = function($scope, carouselService) {
+	var imgDir = 'css/img/',
+		carouselImgDir = imgDir + 'carousel/';
 
 	$scope.slides = [];
 	$scope.disableCarouselNext = true;
@@ -7,10 +9,18 @@ Stylish.carouselController = function($scope, carouselService) {
 
 	carouselService.getSlides().then(
 		function(data){
+			var i = 0;
 			$scope.slides = (data);
 			$scope.slide = $scope.slides[$scope.displayIdx];
 			$scope.disableCarouselNext = false;
 			jQuery("#workCarousel").show();
+			for(i; i<$scope.slides.length; i++) {
+				carouselService.preLoadImage(carouselImgDir + $scope.slides[i][0]).error(
+					function(errorMessage){
+						alert(errorMessage);
+					}
+				)
+			}
 		},
 		function(errorMessage){
 			alert(errorMessage);
@@ -32,9 +42,9 @@ Stylish.carouselController = function($scope, carouselService) {
 	$scope.bgImg = function() {
 		var bg = "";
 		try{
-			bg = 'url(css/img/carousel/' + $scope.slide[0] + ') no-repeat scroll center top / cover transparent';
+			bg = 'url(' + carouselImgDir + $scope.slide[0] + ') no-repeat scroll center top / cover transparent';
 		} catch(e) {
-			bg = "url('css/img/loader.svg') no-repeat scroll center top / cover transparent";
+			bg = "url('" + imgDir + "loader.svg') no-repeat scroll center top / cover transparent";
 		}
 		return {
 			background: bg

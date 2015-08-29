@@ -10,6 +10,16 @@ Stylish.carouselService = function($http, $q) {
         });
         return deferred.promise;
     };
+
+    this.preLoadImage = function(url) {
+        var deferred = $q.defer();
+        $http.get(url).success(function(data){
+            deferred.resolve(data);
+        }).error(function() {
+            deferred.reject("An error occurred while retrieving image at " + url + ".");
+        });
+        return deferred.promise;
+    };
 };
 
 Stylish.service('carouselService', Stylish.carouselService);

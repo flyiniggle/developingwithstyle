@@ -283,7 +283,7 @@ button {
 	text-decoration : none;
 }
 
-.navLink h1:hover {
+.navLink h2:hover {
 	text-decoration : underline;
 	cursor : pointer;
 }

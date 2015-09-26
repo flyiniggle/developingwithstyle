@@ -654,6 +654,18 @@ img.ponyBackground {
 	width: 250px;
 }
 
+#contactPhone {
+	-moz-appearance: textfield;
+}
+
+#contactPhone::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+#contactPhone::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
 .contactYouBlockMessage textarea {
 	width: 100%;
 	height: 300px;

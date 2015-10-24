@@ -487,6 +487,11 @@ img.ponyBackground {
 	visibility: hidden;
 }
 
+.pony {
+	position: absolute;
+	z-index: 2;
+}
+
 .ponyCaption {
 	position: absolute;
 	top: 90px;

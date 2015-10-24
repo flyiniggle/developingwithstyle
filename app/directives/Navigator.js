@@ -13,10 +13,10 @@ Stylish.navigator = function($window) {
                 scope.$apply();
             });
             scope.$watch('selected', function(){
-                if(scope.selected !== '/') {
-                    window.scrollTo(0, 550);
-                } else {
+                if(scope.selected === '/') {
                     window.scrollTo(0, 0);
+                } else if(scope.selected !== '/work'){
+                    window.scrollTo(0, 550);
                 }
                 scope.offset = element[0].getBoundingClientRect().top;
             });

@@ -21,6 +21,7 @@ Stylish.carouselController = function($scope, carouselService) {
 					}
 				);
 			}
+			window.scrollTo(0, 550);
 		},
 		function(errorMessage){
 			alert(errorMessage);

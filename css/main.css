@@ -455,7 +455,7 @@ p, span, a, button {
 #carouselNext, #carouselPrev {
 	position: absolute;
 	top: 500px;
-	z-index: 2;
+	z-index: 3;
 }
 
 #carouselNext {

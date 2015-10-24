@@ -13,7 +13,6 @@ Stylish.carouselController = function($scope, carouselService) {
 			$scope.slides = (data);
 			$scope.slide = $scope.slides[$scope.displayIdx];
 			$scope.disableCarouselNext = false;
-			jQuery("#workCarousel").show();
 			for(i; i<$scope.slides.length; i++) {
 				carouselService.preLoadImage(carouselImgDir + $scope.slides[i][0]).catch(
 					function(errorMessage){
@@ -21,6 +20,7 @@ Stylish.carouselController = function($scope, carouselService) {
 					}
 				);
 			}
+			jQuery("#workCarousel").show();
 			window.scrollTo(0, 550);
 		},
 		function(errorMessage){

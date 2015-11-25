@@ -157,6 +157,8 @@ button {
 
 /*Nav bar*/
 .navigator{
+	position: relative;
+	z-index: 5;
 	height : 68px;
 }
 

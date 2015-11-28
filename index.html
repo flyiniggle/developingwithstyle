@@ -14,11 +14,13 @@
 		<meta name="msapplication-config" content="/css/img/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		<link href="css/main.css" rel="stylesheet" type="text/css"/>
+		<link href="css/grid.css" rel="stylesheet" type="text/css"/>
 		<link href="css/ionicons.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
-		<div id="topMain">
-			<div class="fixedWidth centered">
+		<div id="topMain" class="row">
+			<div class="gutter col"></div>
+			<div class="col span 4_of_6">
 				<div class="outline bigOutline">
 					<div class="mainBox bigBox">
 						<h1 class="whiteSpan">web development</h1>
@@ -26,11 +28,13 @@
 					</div>
 				</div>
 			</div>
+			<div class="gutter col"></div>
 		</div>
 		<div class="navigator" data-ng-controller="navigatorController">
-			<div id="mainNav" class="scrollingNav" data-ng-class="{ 'fixed' : fixBar, 'absolute' : !fixBar }">
+			<div id="mainNav" class="scrollingNav row" data-ng-class="{ 'fixed' : fixBar, 'absolute' : !fixBar }">
 				<div class="scrollingNavTop"></div>
-				<div class="fixedWidth centered linkWrapper">
+				<div class="gutter col"></div>
+				<div class="col span_4_of_6 linkWrapper">
 					<div class="tinyTagContainer">
 						<div class="tinyTag" data-ng-hide="!fixBar">
 							<div class="tinyOutline">
@@ -56,15 +60,18 @@
 						</a>
 					</div>
 				</div>
+				<div class="gutter col"></div>
 				<div class="scrollingNavBottom"></div>
 			</div>
 		</div>
 		<div class="viewWrapper"data-ng-view="">
 		</div>
 		<hr/>
-		<div>
-			<div class="fixedWidth centered">
-				<p id="footer">Designed and developed by Dan Thompson, 2014</p>
+		<div class="row">
+			<div class='col span_6_of_6'>
+				<div class="centered">
+					<p id="footer">Designed and developed by Dan Thompson, 2014</p>
+				</div>
 			</div>
 		</div>
 

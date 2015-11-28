@@ -25,6 +25,10 @@
 		url('fonts/playfair-sc-bold/playfairdisplaysc-bold1-webfont.svg#"ClearSans-Regular') format('svg'); /* Legacy iOS */
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background: #f7f4ff; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -38,14 +42,6 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f4ff', endColorstr='#eae7e5',GradientType=0 ); /* IE6-8 */
 	margin : 0px;
 	padding : 0px;
-}
-
-.fixedWidth {
-	width : 1024px;
-}
-
-.halfWidth {
-	width : 511px;
 }
 
 .centered {
@@ -281,7 +277,6 @@ button {
 	display : inline-block;
 	margin-top : 13px;
 	text-align : center;
-	width : 190px;
 	text-decoration : none;
 }
 
@@ -292,11 +287,6 @@ button {
 
 .navLink a.active {
 	color : #33CCCC;
-}
-
-#bottomMain {
-	margin-top : 0px;
-	padding : 0px;
 }
 
 #bottomGradient {
@@ -313,15 +303,18 @@ button {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#47000000',GradientType=0 ); /* IE6-8 */
 }
 
-#bottomContent {
-	height : 350px;
+#bottomMain {
+	overflow: hidden;
 	padding-top: 30px;
-	padding-bottom : 30px;
+	padding-bottom: 30px;
 }
 
 #bottomContentLeft, #bottomContentRight {
+	padding-left: 25px;
+	padding-right: 25px;
 	display: inline-block;
-	height : 100%;
+	padding-bottom:100%;
+	margin-bottom:-100%;
 }
 
 #bottomContentLeft {
@@ -329,18 +322,11 @@ button {
 }
 
 #bottomContentRight {
-	float: right;
 	box-shadow: inset 10px 0 10px -10px rgb(150, 150, 150);
 }
 
-#bottomContentRight {
-	width : 50%;
-	height : 100%;
-	display: inline-block;
-}
-
 #projects {
-	height : 680px;
+	overflow: hidden;
 	margin-top: 40px;
 	margin-bottom: 60px;
 	background-image : url('img/BottomMainBackground.png');
@@ -348,18 +334,13 @@ button {
 }
 
 .bottomDetailWrapper {
-	width : 50%;
 	padding-top : 70px;
-	float : left;
 }
 
 .bottomDetail {
 	background-color :  #FFFFFF;
-	width : 400px;
-	height : 500px;
-	padding : 10px;
-	margin-left : auto;
-	margin-right : auto;
+	padding : 25px;
+	margin: 10px;
 	text-align : justify;
 	border : 2px solid #DDDDDD;
 	border-radius : 5px;

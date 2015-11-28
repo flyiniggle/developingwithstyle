@@ -31,8 +31,10 @@
 			<div class="gutter col"></div>
 		</div>
 		<div class="navigator" data-ng-controller="navigatorController">
-			<div id="mainNav" class="scrollingNav row" data-ng-class="{ 'fixed' : fixBar, 'absolute' : !fixBar }">
-				<div class="scrollingNavTop"></div>
+			<div id="mainNav" class="scrollingNav" data-ng-class="{ 'fixed' : fixBar, 'absolute' : !fixBar }">
+				<div class="row">
+					<div class="scrollingNavTop col span_6_of_6"></div>
+				</div>
 				<div class="gutter col"></div>
 				<div class="col span_4_of_6 linkWrapper">
 					<div class="tinyTagContainer">
@@ -61,7 +63,9 @@
 					</div>
 				</div>
 				<div class="gutter col"></div>
-				<div class="scrollingNavBottom"></div>
+				<div class="row">
+					<div class="scrollingNavBottom col span_6_of_6"></div>
+				</div>
 			</div>
 		</div>
 		<div class="viewWrapper"data-ng-view="">

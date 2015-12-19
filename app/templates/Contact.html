@@ -1,9 +1,16 @@
 <div id="bottomContact">
-	<div class="fixedWidth centered">
-		<div id="contactMain">
+	<div class="row">
+		<div class="gutter col"></div>
+		<div id="contactHeader" class="col span_4_of_6">
 			<h1>Say hello</h1>
 			<p>Go ahead, reach out. I'd love to hear from you. Get in touch with me and find out what I can do for you.</p>
-			<div id="contactYou">
+		</div>
+		<div class="gutter col"></div>
+	</div>
+	<div class="row">
+		<div class="gutter col"></div>
+		<div id="contactMain">
+			<div id="contactYou" class="col span_3_of_6">
 				<form id="contactYouForm" name="contactForm" novalidate ng-submit="contactMe()">
 					<div class="contactYouBlock">
 						<span class="fieldTitle">Your name:</span>
@@ -45,7 +52,7 @@
 					</div>
 				</form>
 			</div>
-			<div id="contactMe">
+			<div id="contactMe" class="col span_1_of_6">
 				<div class="contactDetail">
 					<h3>Email:</h3>
 					<span id="email">d.thompso@yahoo.com</span>
@@ -60,5 +67,6 @@
 				</div>
 			</div>
 		</div>
+		<div class="gutter col"></div>
 	</div>
 </div>

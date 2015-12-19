@@ -333,16 +333,17 @@ button {
 }
 
 .bottomDetailWrapper {
-	padding-top : 70px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
 .bottomDetail {
-	background-color :  #FFFFFF;
-	padding : 25px;
+	background-color: #FFFFFF;
+	padding: 25px;
 	margin: 10px;
-	text-align : justify;
-	border : 2px solid #DDDDDD;
-	border-radius : 5px;
+	text-align: justify;
+	border: 2px solid #DDDDDD;
+	border-radius: 5px;
 	box-shadow: 0px 5px 5px rgb(136, 136, 136);
 }
 
@@ -559,10 +560,8 @@ img.ponyBackground {
 }
 
 /* Contact */
-#contactMain {
-	padding-top: 60px;
-	padding-left: 20px;
-	padding-right: 20px;
+#bottomContact {
+	overflow: hidden;
 }
 
 #contactMain h1 {
@@ -575,12 +574,16 @@ img.ponyBackground {
 	display: inline;
 }
 
+#contactHeader {
+	padding-top: 15px;
+}
+
 #contactMe {
-	display: inline-block;
-	float: right;
 	margin-top: 50px;
+	margin-left: 15px;
 	padding: 25px;
 	background-color: rgba(85, 85, 85, .7);
+	word-wrap: break-word;
 }
 
 #contactMe a, a:visited {
@@ -599,16 +602,14 @@ img.ponyBackground {
 
 .contactDetail span {
 	color : rgb(247, 250, 253);
-	display: inline;
+	display: block;
 }
 
 #contactYou {
-	display: inline-block;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	padding-right: 15px;
 	padding-bottom: 40px;
-	width : 60%;
 	border-right: 1px solid rgb(136, 136, 136);
 	box-shadow:  10px 0 10px -10px rgb(150, 150, 150);
 }
@@ -617,6 +618,34 @@ img.ponyBackground {
 	display: block;
 	padding: 25px;
 	background-color: rgba(85, 85, 85, .7);
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+	#contactYou {
+		padding-right: 7px;
+	}
+	#contactMe {
+		margin-left: 7px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#contactHeader {
+		padding: 10px;
+	}
+	
+	#contactYou {
+		margin-top: 50px;
+		margin-bottom: 0;
+		padding-right: 0;
+		padding-bottom: 15px;
+		border-bottom: 1px solid rgb(136, 136, 136);
+		box-shadow:  0 10px 10px -10px rgb(150, 150, 150);
+	}
+	#contactMe {
+		margin-top: 15px;
+		margin-left: 0;
+	}
 }
 
 .contactYouBlock {

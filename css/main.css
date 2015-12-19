@@ -363,6 +363,27 @@ button {
 	cursor : pointer;
 }
 
+@media only screen and (max-width: 700px) {
+	#bottomContentLeft, #bottomContentRight {
+		margin-bottom: 0;
+	}
+
+	#bottomContentLeft {
+		border-right: none;
+		border-bottom: 1px solid rgb(136, 136, 136);
+		padding-bottom: 15px;
+	}
+
+	#bottomContentRight {
+		padding-top: 15px;
+		padding-bottom: 0;
+		box-shadow: inset 0px 10px 10px -10px rgb(150,150,150);
+	}
+
+	.bottomDetailWrapper {
+		padding-bottom: 0px;
+	}
+}
 
 /*Text*/
 h1, h2, h3 {
@@ -633,7 +654,7 @@ img.ponyBackground {
 	#contactHeader {
 		padding: 10px;
 	}
-	
+
 	#contactYou {
 		margin-top: 50px;
 		margin-bottom: 0;

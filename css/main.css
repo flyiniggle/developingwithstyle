@@ -524,22 +524,18 @@ img.ponyBackground {
 
 /* About */
 
-#bottomAbout {
-	padding-bottom: 100px;
-}
-
 #bottomAbout p {
-	padding: 20px 40px;
+	padding: 20px 25px;
 }
 
 #bottomAbout h3 {
-	padding: 20px 40px;
+	padding: 20px 25px;
 	font-size: 22px;
 }
 
 #aboutHeader {
 	height: 140px;
-	margin: 40px;
+	margin: 40px 25px;
 	border-bottom: 1px solid rgb(136, 136, 136);
 	box-shadow: 0px 7px 7px -7px rgb(136, 136, 136);
 }
@@ -557,7 +553,6 @@ img.ponyBackground {
 	display: inline-block;
 	line-height: 140px;
 	vertical-align: middle;
-	padding-left : 40px;
 }
 
 #testimonial {
@@ -578,6 +573,18 @@ img.ponyBackground {
 
 .bigQuote {
 	font-size: 20px;
+}
+
+#aboutAction {
+	display: block;
+	padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 700px) {
+	#testimonial {
+		float: none;
+		width: auto;
+	}
 }
 
 /* Contact */

@@ -103,19 +103,18 @@ button {
 	position : absolute;
 	top : -5px;
 	margin-left : 80px;
+	padding: 5px;
 }
 
 .mainBox {
 	background-color : rgba(85, 85, 85, .7);
 	position : absolute;
-	top : 0px;
+	top : -5px;
 }
 
 .bigBox {
-	width : 340px;
-	height : 375px;
-	margin-left : 5px;
-	margin-right : 5px;
+	width : 330px;
+	height : 370px;
 }
 
 .mainBox h1 {

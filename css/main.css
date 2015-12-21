@@ -214,17 +214,18 @@ button {
 	background-color : #555555;
 	text-align : right;
 	padding : 4px;
+	padding-bottom: .7em;
 }
 
 .tinyTealSpan {
 	color : #33CCCC;
-	font-size : 22px;
-	line-height: 16px;
+	font-size : 1.3em;
+	line-height: .8em;
 	font-family : "Playfair Display SC Bold";
 }
 
 .tinyWhiteSpan {
-	font-size : 18px;
+	font-size : 1em;
 	color : #fcf4f2;
 	font-family : "Clear Sans Thin";
 }

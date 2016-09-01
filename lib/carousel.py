@@ -3,7 +3,7 @@ import os
 
 
 class Carousel(object):
-    t = Tree.parse(os.path.join('lib', 'resource', 'carousel.xml'))
+    t = Tree.parse(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'resource', 'carousel.xml'))
     root = t.getroot()
 
     def get_ponies(self):

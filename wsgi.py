@@ -26,6 +26,6 @@ class application(object):
 
     @cherrypy.expose
     def index(self):
-        resource = open(os.path.join("", "index.html"), 'r')
+        resource = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html"), 'r')
         response_body = resource.read()
         return response_body

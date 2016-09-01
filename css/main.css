@@ -488,13 +488,6 @@ p, span, a, button {
 }
 
 /* Work */
-#workIntro {
-	padding-top: 60px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 60px;
-}
-
 #workCarousel {
 	position: relative;
 	min-height: 700px;

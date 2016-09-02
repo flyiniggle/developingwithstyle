@@ -3,8 +3,8 @@ module.exports = function(grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		shell: {
-			pytest: {
-				command: 'python -m py.test -s test/apptest.py',
+			integrationtest: {
+				command: 'python -m py.test -s test/integrationtest.py',
 				options: {
 					stdout: true,
 					failOnError: true
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-shell');
 
-	grunt.registerTask('pytest', ['shell:pytest']);
+	grunt.registerTask('integrationtest', ['shell:integrationtest']);
 
 
 	// Load the plugin that provides the "uglify" task.

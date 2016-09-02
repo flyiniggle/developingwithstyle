@@ -5,7 +5,7 @@ from cherrypy.test import helper
 import app
 
 
-class AppTest(helper.CPWebCase):
+class IntegrationTest(helper.CPWebCase):
 
     def setup_server():
         app.mount()

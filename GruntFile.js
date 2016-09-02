@@ -23,6 +23,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-shell');
 
+	grunt.registerTask('test', ['shell:integrationtest', 'shell:unittest']);
 	grunt.registerTask('integrationtest', ['shell:integrationtest']);
 	grunt.registerTask('unittest', ['shell:unittest']);
 

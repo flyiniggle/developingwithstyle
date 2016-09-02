@@ -1,4 +1,4 @@
-import unittest
+import stylishunittest
 
 from cherrypy.test import helper
 
@@ -21,4 +21,4 @@ class IntegrationTest(helper.CPWebCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    stylishunittest.main()

@@ -9,6 +9,14 @@ module.exports = function(grunt) {
 					stdout: true,
 					failOnError: true
 				}
+			},
+			unittest: {
+				command: 'python -m unittest test.stylishunittest.StylishUnitTest',
+				options: {
+					stdout: true,
+					failOnError: true
+				}
+
 			}
 		}
 	});
@@ -16,6 +24,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-shell');
 
 	grunt.registerTask('integrationtest', ['shell:integrationtest']);
+	grunt.registerTask('unittest', ['shell:unittest']);
 
 
 	// Load the plugin that provides the "uglify" task.

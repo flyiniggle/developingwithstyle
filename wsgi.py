@@ -21,7 +21,8 @@ class application(object):
 
     @cherrypy.expose
     def get_ponies(self):
-        c = carousel.Carousel()
+        ponies_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lib', 'resource', 'carousel.xml')
+        c = carousel.Carousel(ponies_path)
         return json.dumps(c.get_ponies())
 
     @cherrypy.expose

@@ -1,5 +1,3 @@
-Stylish.homeController = function($scope){
+Stylish.controller('homeController', function($scope){
     $scope.someWords = ["one", "two", "three", "four"];
-};
-
-Stylish.controller('homeController', Stylish.homeController);
+});

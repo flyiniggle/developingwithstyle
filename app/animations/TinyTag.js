@@ -1,4 +1,4 @@
-Stylish.tinyTag = function() {
+Stylish.animation('.tinyTag', function() {
     return {
         removeClass : function(element, className, done) {
             if(className === 'ng-hide') {
@@ -18,6 +18,4 @@ Stylish.tinyTag = function() {
             }
         }
     };
-};
-
-Stylish.animation('.tinyTag', Stylish.tinyTag);
+});

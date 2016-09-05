@@ -1,4 +1,4 @@
-Stylish.carouselService = function($http, $q) {
+Stylish.service('carouselService', function($http, $q) {
     var slides = [];
 
     this.getSlides = function() {
@@ -20,6 +20,4 @@ Stylish.carouselService = function($http, $q) {
         });
         return deferred.promise;
     };
-};
-
-Stylish.service('carouselService', Stylish.carouselService);
+});

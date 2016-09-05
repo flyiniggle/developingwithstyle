@@ -1,4 +1,4 @@
-Stylish.carouselController = function($scope, carouselService) {
+Stylish.controller('carouselController', function($scope, carouselService) {
 	var imgDir = 'css/img/',
 		carouselImgDir = imgDir + 'carousel/';
 
@@ -51,6 +51,4 @@ Stylish.carouselController = function($scope, carouselService) {
 			background: bg
 		};
 	};
-};
-
-Stylish.controller('carouselController', Stylish.carouselController);
+});

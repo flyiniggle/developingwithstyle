@@ -1,4 +1,4 @@
-Stylish.carousel = function() {
+Stylish.directive("carousel", function() {
     return {
         restrict : "AC",
         templateUrl : 'app/templates/snippets/Pony.html',
@@ -12,6 +12,4 @@ Stylish.carousel = function() {
             });
         }
     };
-};
-
-Stylish.directive("carousel", ["$window", Stylish.carousel]);
+});

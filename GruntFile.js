@@ -52,6 +52,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-ng-annotate');
 
+	grunt.registerTask('default', ['test', 'mini']);
+
 	grunt.registerTask('mini', ['ngAnnotate', 'concat', 'uglify']);
 
 	grunt.registerTask('test', ['shell:integrationtest', 'shell:unittest']);

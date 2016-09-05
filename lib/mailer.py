@@ -28,6 +28,7 @@ class Mailer(object):
             mail['Subject'] = Header('Contact request', encoding)
 
             smtp_obj.sendmail(SMTP_EMAIL, SMTP_EMAIL, mail.as_string())
+            smtp_obj.quit()
         except Exception as e:
             logging.exception(e)
             raise MessageError

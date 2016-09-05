@@ -16,3 +16,7 @@ class IntegrationTest(helper.CPWebCase):
     def test_get_ponies(self):
         self.getPage("/get_ponies")
         self.assertStatus('200 OK')
+
+    def test_mail(self):
+        self.getPage("/mail", body="{'name':'test', 'email':'test', 'message':'test'")
+        self.assertStatus('200 OK')

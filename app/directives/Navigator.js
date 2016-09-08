@@ -1,4 +1,4 @@
-Stylish.navigator = function($window) {
+Stylish.directive("navigator", function($window) {
     return {
         restrict : "AC",
         link : function(scope, element, attrs) {
@@ -22,6 +22,4 @@ Stylish.navigator = function($window) {
             });
         }
     };
-};
-
-Stylish.directive("navigator", ["$window", Stylish.navigator]);
+});

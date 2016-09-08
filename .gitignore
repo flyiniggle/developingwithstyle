@@ -1,0 +1,10 @@
+.idea/*
+.idea/**
+node_modules/*
+node_modules/**
+.cache/*
+.openshift/*
+.openshift/**
+annotated/*
+annotated/**
+app/stylish.min.js

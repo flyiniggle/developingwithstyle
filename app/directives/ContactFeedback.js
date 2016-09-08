@@ -1,4 +1,4 @@
-Stylish.ContactFeedback = function(){
+Stylish.directive("contactFeedback", function(){
 	return {
 		restrict: "AC",
 		link: function(scope, element, attrs) {
@@ -8,6 +8,4 @@ Stylish.ContactFeedback = function(){
 			})
 		}
 	}
-};
-
-Stylish.directive("contactFeedback", Stylish.ContactFeedback);
+});

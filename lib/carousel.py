@@ -1,10 +1,10 @@
 import xml.etree.ElementTree as Tree
-import os
 
 
 class Carousel(object):
-    t = Tree.parse(os.path.join('lib', 'resource', 'carousel.xml'))
-    root = t.getroot()
+    def __init__(self, location):
+        t = Tree.parse(location)
+        self.root = t.getroot()
 
     def get_ponies(self):
         ponies = []

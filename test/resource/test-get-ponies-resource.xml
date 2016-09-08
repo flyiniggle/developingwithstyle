@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<carousel>
+    <slide>
+        <image>not-a-real-image.jpg</image>
+        <header>check out this header</header>
+        <words>Check out these words.</words>
+    </slide>
+</carousel>

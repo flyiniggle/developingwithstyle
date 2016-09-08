@@ -1,4 +1,4 @@
-Stylish.contactController = function($scope, $http) {
+Stylish.controller('contactController', function($scope, $http) {
 	$scope.formData = {
 		name: "",
 		email: "",
@@ -55,6 +55,4 @@ Stylish.contactController = function($scope, $http) {
 	$scope.closeFeedback = function() {
 		$scope.message = "";
 	}
-};
-
-Stylish.controller('contactController', Stylish.contactController);
+});

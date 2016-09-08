@@ -3,6 +3,7 @@ import json
 import cherrypy
 from email.errors import MessageError
 
+import files
 from lib import mailer, carousel
 
 
@@ -21,11 +22,12 @@ class application(object):
 
     @cherrypy.expose
     def get_ponies(self):
-        c = carousel.Carousel()
+        ponies_path = os.path.join(files.get_root(), 'lib', 'resource', 'carousel.xml')
+        c = carousel.Carousel(ponies_path)
         return json.dumps(c.get_ponies())
 
     @cherrypy.expose
     def index(self):
-        resource = open(os.path.join("", "index.html"), 'r')
+        resource = open(os.path.join(files.get_root(), "index.html"), 'r')
         response_body = resource.read()
         return response_body

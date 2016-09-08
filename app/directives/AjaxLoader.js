@@ -1,4 +1,4 @@
-Stylish.ajaxloader = function($http) {
+Stylish.directive("ajaxloader",  function($http) {
     return {
         restrict : "E",
         templateUrl : 'app/templates/snippets/AjaxLoader.html',
@@ -16,6 +16,4 @@ Stylish.ajaxloader = function($http) {
 			});
         }
     };
-};
-
-Stylish.directive("ajaxloader", ["$http", Stylish.ajaxloader]);
+});

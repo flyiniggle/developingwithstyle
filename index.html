@@ -14,11 +14,13 @@
 		<meta name="msapplication-config" content="/css/img/browserconfig.xml"/>
 		<meta name="theme-color" content="#ffffff"/>
 		<link href="css/main.css" rel="stylesheet" type="text/css"/>
+		<link href="css/grid.css" rel="stylesheet" type="text/css"/>
 		<link href="css/ionicons.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
-		<div id="topMain">
-			<div class="fixedWidth centered">
+		<div id="topMain" class="row">
+			<div class="gutter col"></div>
+			<div class="col span 4_of_6">
 				<div class="outline bigOutline">
 					<div class="mainBox bigBox">
 						<h1 class="whiteSpan">web development</h1>
@@ -26,45 +28,58 @@
 					</div>
 				</div>
 			</div>
+			<div class="gutter col"></div>
 		</div>
 		<div class="navigator" data-ng-controller="navigatorController">
 			<div id="mainNav" class="scrollingNav" data-ng-class="{ 'fixed' : fixBar, 'absolute' : !fixBar }">
-				<div class="scrollingNavTop"></div>
-				<div class="fixedWidth centered linkWrapper">
-					<div class="tinyTagContainer">
-						<div class="tinyTag" data-ng-hide="!fixBar">
-							<div class="tinyOutline">
-								<div class="tinyBox">
-									<span class="tinyWhiteSpan">web development</span>
-									<span class="tinyTealSpan">With Style</span>
+				<div class="row">
+					<div class="scrollingNavTop col span_6_of_6"></div>
+				</div>
+				<div class="row linkWrapper">
+					<div class="gutter col"></div>
+					<div class="col span_1_of_6">
+						<div class="tinyTagContainer">
+							<div class="tinyTag" data-ng-hide="!fixBar">
+								<div class="tinyOutline">
+									<div class="tinyBox">
+										<span class="tinyWhiteSpan">web development</span>
+										<span class="tinyTealSpan">With Style</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div id="horizontalNav" class="centered">
-						<a class="navLink" data-ng-class="{ active : selected === '/' }" href="#/">
-							<h2>Home</h2>
-						</a>
-						<a class="navLink" data-ng-class="{ active : selected === '/work' }" href="#/work">
-							<h2>Work</h2>
-						</a>
-						<a class="navLink" data-ng-class="{ active : selected === '/about' }" href="#/about">
-							<h2>About</h2>
-						</a>
-						<a class="navLink" data-ng-class="{ active : selected === '/contact' }" href="#/contact">
-							<h2>Contact</h2>
-						</a>
+					<div class="col span_3_of_6">
+						<div id="horizontalNav" class="centered">
+							<a class="navLink" data-ng-class="{ active : selected === '/' }" href="#/">
+								<h2>Home</h2>
+							</a>
+							<a class="navLink" data-ng-class="{ active : selected === '/work' }" href="#/work">
+								<h2>Work</h2>
+							</a>
+							<a class="navLink" data-ng-class="{ active : selected === '/about' }" href="#/about">
+								<h2>About</h2>
+							</a>
+							<a class="navLink" data-ng-class="{ active : selected === '/contact' }" href="#/contact">
+								<h2>Contact</h2>
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="scrollingNavBottom"></div>
+				<div class="gutter col"></div>
+				<div class="row">
+					<div class="scrollingNavBottom col span_6_of_6"></div>
+				</div>
 			</div>
 		</div>
 		<div class="viewWrapper" data-ng-view="">
 		</div>
 		<hr/>
-		<div>
-			<div class="fixedWidth centered">
-				<p id="footer">Designed and developed by Dan Thompson, 2014</p>
+		<div class="row">
+			<div class='col span_6_of_6'>
+				<div class="centered">
+					<p id="footer">Designed and developed by Dan Thompson, 2014</p>
+				</div>
 			</div>
 		</div>
 
@@ -75,24 +90,7 @@
 		<script type="text/javascript" src="app/libraries/angular-animate.min.js"></script>
 
 		<!--App-->
-		<script type="text/javascript" src="app/stylish.js"></script>
+		<script type="text/javascript" src="app/stylish.min.js"></script>
 
-		<!--Directives-->
-		<script type="text/javascript" src="app/directives/AjaxLoader.js"></script>
-		<script type="text/javascript" src="app/directives/Navigator.js"></script>
-		<script type="text/javascript" src="app/directives/ContactFeedback.js"></script>
-		<script type="text/javascript" src="app/directives/Carousel.js"></script>
-
-		<!--Animations-->
-		<script type="text/javascript" src="app/animations/TinyTag.js"></script>
-
-		<!--Controllers-->
-		<script type="text/javascript" src="app/controllers/HomeController.js"></script>
-		<script type="text/javascript" src="app/controllers/NavigatorController.js"></script>
-		<script type="text/javascript" src="app/controllers/ContactController.js"></script>
-		<script type="text/javascript" src="app/controllers/CarouselController.js"></script>
-
-		<!--Services-->
-		<script type="text/javascript" src="app/services/CarouselService.js"></script>
 	</body>
 </html>

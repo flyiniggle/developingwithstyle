@@ -2,7 +2,7 @@ jQuery.noConflict();
 
 var Stylish = angular.module("Stylish", ["ngRoute", "ngAnimate"]);
 
-Stylish.routes = function($routeProvider) {
+Stylish.config(function($routeProvider) {
     $routeProvider
             .when('/',
                 {
@@ -29,6 +29,4 @@ Stylish.routes = function($routeProvider) {
                 }
             )
             .otherwise({redirectTo : '/'});
-};
-
-Stylish.config(Stylish.routes);
+});

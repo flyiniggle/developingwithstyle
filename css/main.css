@@ -289,7 +289,7 @@ button {
 	color : #33CCCC;
 }
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-width: 700px) {
 	.tinyTagContainer {
 		position : relative;
 		width : 100%;
@@ -623,7 +623,7 @@ img.ponyBackground {
 	padding-bottom: 80px;
 }
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-width: 700px) {
 	#testimonial {
 		float: none;
 		width: auto;
@@ -691,7 +691,7 @@ img.ponyBackground {
 	background-color: rgba(85, 85, 85, .7);
 }
 
-@media only screen and (min-device-width: 701px) and (max-device-width: 1000px) {
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
 	#contactYou {
 		padding-right: 7px;
 	}
@@ -700,7 +700,7 @@ img.ponyBackground {
 	}
 }
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-width: 700px) {
 	#contactHeader {
 		padding: 10px;
 	}

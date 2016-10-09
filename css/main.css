@@ -488,6 +488,13 @@ p, span, a, button {
 }
 
 /* Work */
+#workHeader {
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 50px;
+}
+
 #workCarousel {
 	position: relative;
 	display: none;

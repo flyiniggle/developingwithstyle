@@ -2,7 +2,7 @@ import os
 import files
 
 
-virtenv = os.environ['OPENSHIFT_PYTHON_DIR'] + '/virtenv/'
+virtenv = os.path.join(os.environ['OPENSHIFT_PYTHON_DIR'], 'virtenv')
 virtualenv = os.path.join(virtenv, 'bin', 'activate_this.py')
 conf = os.path.join(files.get_root(), "conf", "server.conf")
 try:

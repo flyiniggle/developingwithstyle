@@ -7,6 +7,7 @@ virtualenv = os.path.join(virtenv, 'bin', 'activate_this.py')
 conf = os.path.join(files.get_root(), "conf", "server.conf")
 try:
     execfile(virtualenv, dict(__file__=virtualenv))
+    print virtualenv
 except IOError:
     pass
 

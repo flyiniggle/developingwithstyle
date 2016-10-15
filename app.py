@@ -25,7 +25,8 @@ def mount():
 
     cherrypy.config.update({"tools.staticdir.root": files.get_root()})
     cherrypy.tools.CORS = cherrypy.Tool('before_handler', CORS)
-    cherrypy.tree.mount(wsgi.application(), "/", conf)
+    ##cherrypy.tree.mount(wsgi.application(), "/", conf)
+    cherrypy.quickstart(wsgi.application(), "/", conf)
 
 
 def start():

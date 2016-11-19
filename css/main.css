@@ -352,11 +352,13 @@ button {
 	overflow: hidden;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	margin-top: 200px;
+	margin-bottom: 200px;
 }
 
 #bottomContentLeft, #bottomContentRight {
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 50px;
+	padding-right: 50px;
 	display: inline-block;
 	padding-bottom:100%;
 	margin-bottom:-100%;
@@ -385,7 +387,7 @@ button {
 
 .bottomDetail {
 	background-color: #FFFFFF;
-	padding: 25px;
+	padding: 75px;
 	margin: 10px;
 	text-align: justify;
 	border: 2px solid #DDDDDD;
@@ -412,16 +414,18 @@ button {
 @media only screen and (max-width: 700px) {
 	#bottomContentLeft, #bottomContentRight {
 		margin-bottom: 0;
+		padding-left: 100px;
+		padding-right: 100px;
 	}
 
 	#bottomContentLeft {
 		border-right: none;
 		border-bottom: 1px solid rgb(136, 136, 136);
-		padding-bottom: 15px;
+		padding-bottom: 150px;
 	}
 
 	#bottomContentRight {
-		padding-top: 15px;
+		padding-top: 150px;
 		padding-bottom: 0;
 		box-shadow: inset 0px 10px 10px -10px rgb(150,150,150);
 	}

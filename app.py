@@ -4,7 +4,6 @@ import files
 
 virtenv = os.path.join(os.environ['OPENSHIFT_PYTHON_DIR'], 'virtenv')
 virtualenv = os.path.join(virtenv, 'bin', 'activate_this.py')
-conf = os.path.join(files.get_root(), "conf", "server.conf")
 
 try:
     execfile(virtualenv, dict(__file__=virtualenv))
@@ -15,7 +14,7 @@ import cherrypy
 import wsgi
 
 
-def mount():
+def mount(conf):
     def CORS():
         cherrypy.response.headers["Access-Control-Allow-Origin"] = os.environ['OPENSHIFT_APP_DNS']
 
@@ -35,5 +34,5 @@ def end():
 
 
 if __name__ == "__main__":
-    mount()
+    mount(os.path.join(files.get_root(), "conf", "server.conf"))
     start()

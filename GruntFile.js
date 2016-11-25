@@ -3,6 +3,13 @@ module.exports = function(grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		karma: {
+			unittest: {
+			    configFile: 'karma.conf.js',
+				background: true,
+				singleRun: false
+			}
+		},
 		shell: {
 			integrationtest: {
 				command: 'python -m py.test -s test/integrationtest.py',
@@ -51,13 +58,14 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-ng-annotate');
+	grunt.loadNpmTasks('grunt-karma');
 
 	grunt.registerTask('default', ['test', 'mini']);
 
 	grunt.registerTask('mini', ['ngAnnotate', 'concat', 'uglify']);
 
-	grunt.registerTask('test', ['shell:integrationtest', 'shell:unittest']);
+	grunt.registerTask('test', ['shell:integrationtest', 'shell:unittest', 'karma:unittest']);
 	grunt.registerTask('integrationtest', ['shell:integrationtest']);
-	grunt.registerTask('unittest', ['shell:unittest']);
+	grunt.registerTask('unittest', ['shell:unittest', 'karma:unittestrun']);
 
 };

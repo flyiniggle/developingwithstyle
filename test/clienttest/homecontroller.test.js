@@ -19,7 +19,7 @@ describe('homeController', function () {
 	  });
 });
 
-describe('homeController', function () {
+describe('contactController', function () {
 	var $controller;
 
 	beforeEach(module('Stylish'));

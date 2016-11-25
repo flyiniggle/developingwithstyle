@@ -395,15 +395,21 @@ button {
 	box-shadow: 0px 5px 5px rgb(136, 136, 136);
 }
 
-.bottomDetailImage{
+.bottomDetailImage {
 	height : 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 	margin-top : 20px;
+	max-width: 275px;
 }
 
-.bottomDetail img {
-	margin-left : auto;
-	margin-right : auto;
-	display : block;
+.chartlyImage {
+	background: url('img/ChartlyLogo275.png') no-repeat scroll center top / contain transparent;
+}
+
+.dinDinImage {
+	background: url('img/DinDinLogo275.png') no-repeat scroll center top / contain transparent;
 }
 
 .navLink:hover {
@@ -414,8 +420,8 @@ button {
 @media only screen and (max-width: 700px) {
 	#bottomContentLeft, #bottomContentRight {
 		margin-bottom: 0;
-		padding-left: 100px;
-		padding-right: 100px;
+		padding-left: 15%;
+		padding-right: 15%;
 	}
 
 	#bottomContentLeft {
@@ -428,6 +434,10 @@ button {
 		padding-top: 150px;
 		padding-bottom: 0;
 		box-shadow: inset 0px 10px 10px -10px rgb(150,150,150);
+	}
+
+	.bottomDetail {
+		padding: 15%;
 	}
 
 	.bottomDetailWrapper {

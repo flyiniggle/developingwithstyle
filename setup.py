@@ -8,5 +8,5 @@ setup(name='Stylish',
       author='Dan Thompson',
       author_email='d.thompso@yahoo.com',
       packages=find_packages(),
-      install_requires=["cherrypy", "nose>=1.3.7", "pytest>=3.0.1", "colorama", "pypiwin32", "six"]
+      install_requires=["cherrypy", "nose>=1.3.7", "pytest>=3.0.1", "colorama", "six"]
      )

@@ -16,7 +16,10 @@ import wsgi
 
 def mount(conf):
     def CORS():
-        cherrypy.response.headers["Access-Control-Allow-Origin"] = os.environ['OPENSHIFT_APP_DNS']
+        try:
+            cherrypy.response.headers["Access-Control-Allow-Origin"] = os.environ['OPENSHIFT_APP_DNS']
+        except KeyError:
+            pass
 
     cherrypy.config.update({"tools.staticdir.root": files.get_root()})
     cherrypy.config.update(conf)

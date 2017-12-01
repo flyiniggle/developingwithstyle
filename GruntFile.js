@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			integrationtest: {
-				command: 'python -m py.test -s test/integrationtest.py',
+				command: 'python -m pytest -s test/integrationtest.py',
 				options: {
 					stdout: true,
 					failOnError: true

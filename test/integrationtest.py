@@ -8,7 +8,8 @@ import app
 
 
 def CORS():
-    cherrypy.response.headers["Access-Control-Allow-Origin"] = os.environ['OPENSHIFT_APP_DNS']
+    #cherrypy.response.headers["Access-Control-Allow-Origin"] = os.environ['OPENSHIFT_APP_DNS']
+    pass
 
 
 class IntegrationTest(helper.CPWebCase):

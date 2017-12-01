@@ -8,7 +8,7 @@ from email.header import Header
 SMTP_SERVER = 'smtp.mail.yahoo.com'
 SMTP_PORT = '587'
 SMTP_USER = "d.thompso"
-SMTP_PASSWORD = os.environ.get("OPENSHIFT_EMAIL_P", "")
+SMTP_PASSWORD = os.environ.get("EMAILP", "")
 SMTP_EMAIL = "%s@yahoo.com" % SMTP_USER
 encoding = 'utf-8'
 

@@ -7,3 +7,5 @@ annotated/*
 annotated/**
 *.log
 **/__pycache__/**
+
+app/stylish.min.js

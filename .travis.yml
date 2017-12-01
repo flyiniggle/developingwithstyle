@@ -11,11 +11,13 @@ install:
   - npm install
 # command to run tests
 script:
+  - grunt mini
   - grunt test
 
 deploy:
   provider: heroku
   app: developingwithstyle
+  skip_cleanup: true
   api_key:
     secure: "gEkHzQUZbecvQw9Zv7AZ57XTIlyxHGbIqaIb63tmwviwOb0L1hJF1HZ1dZvFF9tGJ3gJz53hpU+RVE/sCsIcLCRFqcQg6z4t20Gx+J5oWNWp4J94eeaqh746APzbtztl3H/qX6M/YqsS4p2wnWMJU0QojpyrKSrUVnPJqA8gJ5ilxnJU7njpwoCHMY51WAml7Z7e5ME2YzYj9mGq7toFfSgJpByC+Jl8FaAa55yRLUd/ei1ueet/78qYva9qho0zk8kmPEYEm0O9OnNq4E7ky52fAR8Xc/t9T0wG4P9bDLUUp5h6H0WjB+ibMV5SFQts9fhf7loH2q0VzLxB0Aizeyxsk4okZMtok556VRl7a/zEJvgSgQjMm+P5Iq/6OhjLl3hrBz+doIgpBUxWcGSZ7UWqBhtl0EJreqeTBl94nMhpasnwh6eWd4bQcRsiQFEFXXD24UZyte8PdFb3s303FRLC1QPNmCVHK9hxBXEXMWdBfSAdTPVOFkJLWk7LPvojdUHZcyBa9ykQhQ9tUtjt35ofIa+u6qHv73XG0SrNjKmDSXEpN9FCm+HhzQgJeqe53PVNfc57r2pYwVkwzFbQ4U1riA5gvP66/e+rnY044wcfOb+2sRBP4yv2GvwyY9ReLUVvthPDNXhV0dO0Vgojxh7y+s2IQsERtiJqPH2AcPk="
 

@@ -20,10 +20,8 @@ encoding = 'utf-8'
 class Mailer(object):
     def send_mail(self, name, their_email, telephone, message):
         try:
-            smtp_obj = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-            smtp_obj.ehlo()
-            smtp_obj.starttls()
-            smtp_obj.login(SMTP_USER, SMTP_PASSWORD)
+            smtp_obj =  self.connect()
+
             name = self.clean_input(name)
             message = self.clean_input(message)
             their_email = self.clean_input(their_email)
@@ -35,9 +33,20 @@ class Mailer(object):
 
             smtp_obj.sendmail(SMTP_EMAIL, SMTP_TO_EMAIL, mail.as_string())
             smtp_obj.quit()
-        except Exception as e:
+        except (smtplib.SMTPRecipientsRefused, smtplib.SMTPSenderRefused, smtplib.SMTPAuthenticationError) as e:
             logging.exception(e)
             raise MessageError
+
+    def connect(self):
+        smtp_obj = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        smtp_obj.ehlo()
+        smtp_obj.starttls()
+        try:
+            smtp_obj.login(SMTP_USER, SMTP_PASSWORD)
+        except smtplib.SMTPAuthenticationError:
+            smtp_obj.close()
+            raise
+        return smtp_obj
 
     def write_mail(self, name, their_email, message, telephone):
         return "From: {n}\nAddress: {e}\nTelephone: {t}\n\n{m}".format(n=name, e=their_email, t=telephone, m=message)

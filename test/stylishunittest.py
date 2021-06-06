@@ -40,6 +40,14 @@ class StylishUnitTest(unittest.TestCase):
         expected_message = "From: me\nAddress: me@gmail.com\nTelephone: 111-111-1111\n\nThis is a message"
         self.assertEqual(message, expected_message, "Expected {0} but got {1}".format(expected_message, message))
 
+    def test_connect(self):
+        m = Mailer()
+        try:
+            smtp = m.connect()
+            smtp.close()
+        except SMTPAuthenticationError:
+            self.fail("Could not connect.")
+
 
 if __name__ == "__main__":
     unittest.main()
